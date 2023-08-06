@@ -9,13 +9,11 @@ import pandas as pd
 st.title('Meal Generator')
 
 
-
 with st.sidebar:
         st.title('Settings:')
         st.text("User: " + str(st.experimental_user['email']))
         st.divider()
         meals_count = st.slider('How Many Meals?', 1, 7, 5)
-
 
 
 
