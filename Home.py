@@ -8,13 +8,24 @@ import streamlit as st
 
 st.title('Meal Generator')
 
-!wget "https://drive.google.com/uc?export=download&id=1yi4afzO20LqU2qdRrtK_g04H7juTzUT8"
-!wget "https://drive.google.com/uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a"
-!wget "https://drive.google.com/uc?export=download&id=1lplwJcZ4a6bWpUGj9D7gNoHjqOyB5Zo-"
+import wget
+url = 'http://www.futurecrew.com/skaven/song_files/mp3/razorback.mp3'
+filename = wget.download(url)
 
-df_meal_directory = pd.read_csv('uc?export=download&id=1yi4afzO20LqU2qdRrtK_g04H7juTzUT8')
-df_ingredient_directory = pd.read_csv('uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a')
-df_exclude_list = pd.read_csv('uc?export=download&id=1lplwJcZ4a6bWpUGj9D7gNoHjqOyB5Zo-')
+st.write(filename)
+
+
+
+
+
+
+#!wget "https://drive.google.com/uc?export=download&id=1yi4afzO20LqU2qdRrtK_g04H7juTzUT8"
+#!wget "https://drive.google.com/uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a"
+#!wget "https://drive.google.com/uc?export=download&id=1lplwJcZ4a6bWpUGj9D7gNoHjqOyB5Zo-"
+
+#df_meal_directory = pd.read_csv('uc?export=download&id=1yi4afzO20LqU2qdRrtK_g04H7juTzUT8')
+#df_ingredient_directory = pd.read_csv('uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a')
+#df_exclude_list = pd.read_csv('uc?export=download&id=1lplwJcZ4a6bWpUGj9D7gNoHjqOyB5Zo-')
 
 
 st.write('Test 123')
