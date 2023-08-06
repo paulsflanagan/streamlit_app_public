@@ -42,7 +42,7 @@ if st.button('Generate Meals'):
   
   #st.download_button('Download Output', data=data_as_csv, file_name=export_file_name)
   
-  while len(df_menu) < 1:
+  while len(df_menu) < meals_count:
     df_prospective_meal = df_meal_directory.sample()
     #if (df_prospective_meal.iloc[0]['dish_name'] not in set (df_exclude_list['dish_name'].values)):
     if True:
