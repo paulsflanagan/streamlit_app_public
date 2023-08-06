@@ -27,12 +27,15 @@ st.write(filename_ingredients_directory)
 #!wget "https://drive.google.com/uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a"
 #!wget "https://drive.google.com/uc?export=download&id=1lplwJcZ4a6bWpUGj9D7gNoHjqOyB5Zo-"
 
-#df_meal_directory = pd.read_csv('uc?export=download&id=1yi4afzO20LqU2qdRrtK_g04H7juTzUT8')
-#df_ingredient_directory = pd.read_csv('uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a')
+df_meal_directory = pd.read_csv(filename_meal_directory)
+df_ingredient_directory = pd.read_csv(filename_ingredients_directory)
 #df_exclude_list = pd.read_csv('uc?export=download&id=1lplwJcZ4a6bWpUGj9D7gNoHjqOyB5Zo-')
 
 
-st.write('Test 123')
+
+st.write(df_meal_directory)
+
+st.write(df_ingredient_directory)
 
 #df_menu = pd.DataFrame()
 
@@ -55,5 +58,5 @@ st.write('Test 123')
        #   if (df_prospective_meal.iloc[0]['base_ingredient'] not in set(df_menu['base_ingredient'].values)):
         #    df_menu = pd.concat([df_menu, df_prospective_meal])
 
-#st.write(df_menu)
+st.write(df_menu)
 #st.write(len(df_menu))
