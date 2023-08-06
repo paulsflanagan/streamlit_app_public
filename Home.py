@@ -8,14 +8,13 @@ import pandas as pd
 
 st.title('Meal Generator')
 
+meal_count = 5
 
 with st.sidebar:
         st.title('Settings:')
         st.text("User: " + str(st.experimental_user['email']))
         st.divider()
         meals_count = st.slider('How Many Meals?', 1, 7, 5)
-        st.divider()
-        option = st.selectbox('How many meals would you like?',('2','3','4','5','6','7'))
 
 
 
@@ -52,7 +51,7 @@ if st.button('Generate Meals'):
   
   # Additional Meals
   
-  while len(df_menu) < 5:
+  while len(df_menu) < meal_count:
     df_prospective_meal = df_meal_directory.sample()
   
     #if (df_prospective_meal.iloc[0]['dish_name'] not in set (df_exclude_list['dish_name'].values)):
