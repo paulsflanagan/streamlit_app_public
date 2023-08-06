@@ -20,7 +20,6 @@ with st.sidebar:
 
 import wget
 
-
 #if st.button('Update Data'):
 url_meal_directory = "https://drive.google.com/uc?export=download&id=1yi4afzO20LqU2qdRrtK_g04H7juTzUT8"
 url_ingredients_directory = "https://drive.google.com/uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a"
