@@ -9,12 +9,16 @@ import streamlit as st
 st.title('Meal Generator')
 
 import wget
-url = 'http://www.futurecrew.com/skaven/song_files/mp3/razorback.mp3'
-filename = wget.download(url)
+url_meal_directory = "https://drive.google.com/uc?export=download&id=1yi4afzO20LqU2qdRrtK_g04H7juTzUT8"
+filename_meal_directory = wget.download(url_meal_directory)
 
-st.write(filename)
+st.write(filename_meal_directory)
 
 
+url_ingredients_directory = "https://drive.google.com/uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a"
+filename_ingredients_directory = wget.download(url_ingredients_directory)
+
+st.write(filename_ingredients_directory)
 
 
 
