@@ -8,7 +8,7 @@ import pandas as pd
 
 st.title('Meal Generator')
 
-meal_count = 5
+
 
 with st.sidebar:
         st.title('Settings:')
