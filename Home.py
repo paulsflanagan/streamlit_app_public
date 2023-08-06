@@ -19,7 +19,9 @@ df_meal_directory = pd.read_csv(filename_meal_directory)
 df_ingredient_directory = pd.read_csv(filename_ingredients_directory)
 
 
-st.write(df_meal_directory)
+# DISPLAY ALL MEALS
+#st.write(df_meal_directory)
+
 
 #st.write(df_ingredient_directory)
 
