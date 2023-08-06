@@ -40,7 +40,8 @@ while len(df_menu) < 1:
 while len(df_menu) < 5:
   df_prospective_meal = df_meal_directory.sample()
 
-  if (df_prospective_meal.iloc[0]['dish_name'] not in set (df_exclude_list['dish_name'].values)):
+  #if (df_prospective_meal.iloc[0]['dish_name'] not in set (df_exclude_list['dish_name'].values)):
+  if True:
     if (df_prospective_meal.iloc[0]['dish_name'] not in set(df_menu['dish_name'].values)):
       if (df_prospective_meal.iloc[0]['style'] not in set(df_menu['style'].values)):
         if (df_prospective_meal.iloc[0]['main_ingredient'] not in set(df_menu['main_ingredient'].values)):
