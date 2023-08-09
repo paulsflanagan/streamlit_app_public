@@ -126,5 +126,4 @@ if st.button('Generate Meals'):
 
   st.download_button(label="Export_Menu",
                     data=pp,
-                    file_name="test.pdf",
-                    mime='application/octet-stream')
+                    file_name="test.pdf")
