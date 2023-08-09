@@ -2,9 +2,9 @@ import os
 import streamlit as st
 #import requests
 import pandas as pd
-#import numpy as np
-#import matplotlib.pyplot as plt
-#from matplotlib.backends.backend_pdf import PdfPages
+import numpy as np
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
 
 st.title('Meal Generator')
 
@@ -108,3 +108,19 @@ if st.button('Generate Meals'):
 
   st.write(df_sorted)
   #st.write(len(df_menu))
+
+
+
+  # Create Menu List PDF
+
+  df_menu_meal_only = df_menu[['dish_name','dish_sub_name','link']].copy()
+
+
+  fig, ax =plt.subplots(figsize=(12,4))
+  ax.axis('tight')
+  ax.axis('off')
+  the_table = ax.table(cellText=df_menu_meal_only.values,colLabels=df_menu_meal_only.columns,loc='center')
+
+  pp = PdfPages("menu_export.pdf")
+  pp.savefig(fig, bbox_inches='tight')
+  pp.close()
