@@ -110,7 +110,6 @@ if st.button('Generate Meals'):
   #st.write(len(df_menu))
 
 
-
   # Create Menu List PDF
 
   df_menu_meal_only = df_menu[['dish_name','dish_sub_name','link']].copy()
@@ -124,3 +123,8 @@ if st.button('Generate Meals'):
   pp = PdfPages("menu_export.pdf")
   pp.savefig(fig, bbox_inches='tight')
   pp.close()
+
+  st.download_button(label="Export_Menu",
+                    data=pp,
+                    file_name="test.pdf",
+                    mime='application/octet-stream')
