@@ -65,4 +65,46 @@ if st.button('Generate Meals'):
               df_menu = pd.concat([df_menu, df_prospective_meal])
   
   st.write(df_menu)
-#st.write(len(df_menu))
+
+  # Extrapolate Ingredients and Attach Category
+
+  string_list = ''
+
+  for row in df_menu.itertuples():
+
+    string_list = string_list + row.ingredients
+    string_list = string_list + ','
+    split_list = string_list.split(",")
+
+  df = pd.DataFrame(columns=['item','category','quantity'])
+
+  for each in split_list:
+    if each not in set(df['item'].values):
+      #print(each)
+      df3 = df_ingredient_directory.loc[df_ingredient_directory['ingredient'] == each]
+      #print(df3)
+      try:
+        category = df3.iloc[0]['category']
+        #print(category)
+      except:
+        category = 'Unknown'
+      df.loc[len(df)] = [each,category,1]
+    else:
+      df2 = df.loc[df['item'] == each]
+      value = df2.iloc[0]['quantity']
+      value = value + 1
+      df.loc[df['item'] == each, 'quantity'] = value
+
+
+
+  my_int = int(len(df))
+  my_int = my_int - 1
+
+  #df.drop([my_int], axis=0, inplace=True)
+
+  df_sorted = df.sort_values(by=['category','item'], inplace=False, ascending=True)
+  df_sorted.drop([my_int], axis=0, inplace=True)
+
+
+  st.write(df_sorted)
+  #st.write(len(df_menu))
