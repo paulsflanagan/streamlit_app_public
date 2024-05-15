@@ -7,6 +7,7 @@ import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
 st.title('Meal Generator')
+st.write('Meal Generator')
 
 
 with st.sidebar:
