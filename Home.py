@@ -8,7 +8,7 @@ import io
 import zipfile
 
 
-st.title('Menu Generator')
+st.title('Cusine Compass')
 
 
 with st.sidebar:
