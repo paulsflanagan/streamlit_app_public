@@ -47,7 +47,7 @@ if st.button('Inspire Me'):
             if (df_prospective_meal.iloc[0]['base_ingredient'] not in set(df_menu['base_ingredient'].values)):
               df_menu = pd.concat([df_menu, df_prospective_meal])
 
-  st.write("Menu")
+  st.subheader("Meal Selection")
   df_menu_display = df_menu[['dish_name','dish_sub_name','style']].copy()
   st.dataframe(df_menu_display, column_config={"dish_name": "Dish", "dish_sub_name": "Accompaniments", "style": "Cuisine",}, hide_index=True)
 
@@ -88,7 +88,7 @@ if st.button('Inspire Me'):
   df_sorted.drop([my_int], axis=0, inplace=True)
 
         
-  st.write("Shopping List")
+  st.subheader("Shopping List")
   st.dataframe(df_sorted, column_config={"item": "Ingredient", "category": "Section", "quantity": "Quantity",}, hide_index=True)
   #st.write(df_sorted)
 
