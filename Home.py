@@ -46,7 +46,8 @@ if st.button('Generate Meals'):
           if (df_prospective_meal.iloc[0]['main_ingredient'] not in set(df_menu['main_ingredient'].values)):
             if (df_prospective_meal.iloc[0]['base_ingredient'] not in set(df_menu['base_ingredient'].values)):
               df_menu = pd.concat([df_menu, df_prospective_meal])
-  
+
+  st.write("Menu")
   st.write(df_menu)
 
         
@@ -85,7 +86,8 @@ if st.button('Generate Meals'):
   df_sorted = df.sort_values(by=['category','item'], inplace=False, ascending=True)
   df_sorted.drop([my_int], axis=0, inplace=True)
 
-
+        
+  st.write("Shopping List")
   st.write(df_sorted)
 
 
@@ -108,4 +110,4 @@ if st.button('Generate Meals'):
 
   zipped_file.seek(0)
 
-  st.download_button(label="Export_Menu",data=zipped_file,file_name="meal_menu.zip")
+  st.download_button(label="Export Menu",data=zipped_file,file_name="meal_menu.zip")
