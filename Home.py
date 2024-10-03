@@ -9,7 +9,6 @@ import zipfile
 
 
 st.title('Meal Generator')
-st.write('Meal Generator')
 
 
 with st.sidebar:
