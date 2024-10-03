@@ -110,8 +110,8 @@ if st.button('Generate Meals'):
         
   zipped_file = io.BytesIO()
   with zipfile.ZipFile(zipped_file, 'w') as f:
-    f.writestr("menu_data_as_csv.csv", menu_data_as_csv.getvalue())
-    f.writestr("shopping_list_as_csv.csv", shopping_list_as_csv.getvalue())
+    f.writestr("menu_data_as_csv.csv", menu_data_as_csv)
+    f.writestr("shopping_list_as_csv.csv", shopping_list_as_csv)
 
   zipped_file.seek(0)
 
