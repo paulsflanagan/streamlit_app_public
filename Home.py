@@ -89,7 +89,8 @@ if st.button('Inspire Me'):
 
         
   st.write("Shopping List")
-  st.write(df_sorted)
+  st.dataframe(df_sorted, column_config={"item": "Ingredient", "category": "Section", "quantity": "Quantity",}, hide_index=True)
+  #st.write(df_sorted)
 
 
   # Create Menu Export
