@@ -5,6 +5,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
+import io
+import zipfile
+
+
+
 
 st.title('Meal Generator')
 st.write('Meal Generator')
@@ -97,10 +102,17 @@ if st.button('Generate Meals'):
 
   menu_data_as_csv = df_menu_meal_only.to_csv(index=False).encode("utf-8")
 
-  st.download_button(label="Export_Menu",data=menu_data_as_csv,file_name="meal_menu.csv")
-
   # Create Shopping List Export
 
   shopping_list_as_csv = df_sorted.to_csv(index=False).encode("utf-8")
+        
+  files = [menu_data_as_csv, shopping_list_as_csv]
+        
+  zipped_file = io.BytesIO()
+  with zipfile.ZipFile(zipped_file, 'w') as f:
+    for i, file in enumerate(files):
+        f.writestr("{}.csv".format(i), file.getvalue())
 
-  st.download_button(label="Export_Shopping_List",data=shopping_list_as_csv,file_name="shopping_list.csv")
+  zipped_file.seek(0)
+
+  st.download_button(label="Export_Menu",data=zipped_file,file_name="meal_menu.zip")
