@@ -25,7 +25,7 @@ df_ingredient_directory = pd.read_csv("ingredient_directory.csv")
 
 
 # Generate Meals
-if st.button('Make my meal plan'):
+if st.button('Inspire Me'):
 
   df_menu = pd.DataFrame()
   
@@ -110,4 +110,4 @@ if st.button('Make my meal plan'):
 
   zipped_file.seek(0)
 
-  st.download_button(label="Download Meal Plan",data=zipped_file,file_name="meal_menu.zip")
+  st.download_button(label="Download",data=zipped_file,file_name="meal_menu.zip")
