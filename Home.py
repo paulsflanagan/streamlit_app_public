@@ -8,7 +8,7 @@ import io
 import zipfile
 
 
-st.title('Meal Generator')
+st.title('Menu Generator')
 
 
 with st.sidebar:
