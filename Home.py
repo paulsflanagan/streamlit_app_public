@@ -1,14 +1,11 @@
 import os
 import streamlit as st
-#import requests
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 import io
 import zipfile
-
-
 
 
 st.title('Meal Generator')
@@ -22,13 +19,9 @@ with st.sidebar:
         meals_count = st.slider('How Many Meals?', 1, 7, 5)
 
 
-
-
-import wget
-
 # Import Meal Directory and Ingredient Directory
-df_meal_directory = pd.read_csv("meal_directory.csv") #pd.read_csv(filename_meal_directory)
-df_ingredient_directory = pd.read_csv("ingredient_directory.csv") #pd.read_csv(filename_ingredients_directory)
+df_meal_directory = pd.read_csv("meal_directory.csv")
+df_ingredient_directory = pd.read_csv("ingredient_directory.csv")
 
 
 # Generate Meals
@@ -38,17 +31,16 @@ if st.button('Generate Meals'):
   
   while len(df_menu) < 1:
     df_prospective_meal = df_meal_directory.sample()
-    #if (df_prospective_meal.iloc[0]['dish_name'] not in set (df_exclude_list['dish_name'].values)):
     if True:
       df_menu = pd.concat([df_menu, df_prospective_meal])
 
         
   # Additional Meals
   while len(df_menu) < meals_count:
+          
     df_prospective_meal = df_meal_directory.sample()
-  
-    #if (df_prospective_meal.iloc[0]['dish_name'] not in set (df_exclude_list['dish_name'].values)):
     if True:
+            
       if (df_prospective_meal.iloc[0]['dish_name'] not in set(df_menu['dish_name'].values)):
         if (df_prospective_meal.iloc[0]['style'] not in set(df_menu['style'].values)):
           if (df_prospective_meal.iloc[0]['main_ingredient'] not in set(df_menu['main_ingredient'].values)):
@@ -57,6 +49,7 @@ if st.button('Generate Meals'):
   
   st.write(df_menu)
 
+        
   # Extrapolate Ingredients and Attach Category
 
   string_list = ''
@@ -110,8 +103,8 @@ if st.button('Generate Meals'):
         
   zipped_file = io.BytesIO()
   with zipfile.ZipFile(zipped_file, 'w') as f:
-    f.writestr("menu_data_as_csv.csv", menu_data_as_csv)
-    f.writestr("shopping_list_as_csv.csv", shopping_list_as_csv)
+    f.writestr("Menu.csv", menu_data_as_csv)
+    f.writestr("Shopping List.csv", shopping_list_as_csv)
 
   zipped_file.seek(0)
 
