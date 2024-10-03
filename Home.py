@@ -48,7 +48,7 @@ if st.button('Inspire Me'):
               df_menu = pd.concat([df_menu, df_prospective_meal])
 
   st.write("Menu")
-  st.dataframe(df_menu, column_config={"dish_name": "Dish"}, hide_index=True)
+  st.dataframe(df_menu, column_config={"dish_name": "Dish", "dish_sub_name": "Accompaniments", }, hide_index=True)
   #st.write(df_menu)
 
         
