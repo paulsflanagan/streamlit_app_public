@@ -30,7 +30,7 @@ Google Drive being in consistent with HTTPErrors
 #url_ingredients_directory =  "https://drive.google.com/uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a"
 #filename_meal_directory = wget.download(url_meal_directory)
 #filename_ingredients_directory = wget.download(url_ingredients_directory)
-df_meal_directory = pd.read_csv("meal_directoy.csv") #pd.read_csv(filename_meal_directory)
+df_meal_directory = pd.read_csv("meal_directory.csv") #pd.read_csv(filename_meal_directory)
 df_ingredient_directory = pd.read_csv("ingredient_directory.csv") #pd.read_csv(filename_ingredients_directory)
 
 
