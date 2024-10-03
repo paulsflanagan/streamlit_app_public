@@ -21,39 +21,24 @@ with st.sidebar:
 
 import wget
 
-'''
-Move CSV Repo to GitHub
-Google Drive being in consistent with HTTPErrors
-'''
-#if st.button('Update Data'):
-#url_meal_directory =  "https://drive.google.com/uc?export=download&id=1yi4afzO20LqU2qdRrtK_g04H7juTzUT8"
-#url_ingredients_directory =  "https://drive.google.com/uc?export=download&id=1EOxvPrpOn3NMwmYg5XegtyXdgjq09A9a"
-#filename_meal_directory = wget.download(url_meal_directory)
-#filename_ingredients_directory = wget.download(url_ingredients_directory)
+# Import Meal Directory and Ingredient Directory
 df_meal_directory = pd.read_csv("meal_directory.csv") #pd.read_csv(filename_meal_directory)
 df_ingredient_directory = pd.read_csv("ingredient_directory.csv") #pd.read_csv(filename_ingredients_directory)
 
 
-# DISPLAY ALL MEALS
-#st.write(df_meal_directory)
-
-
-#st.write(df_ingredient_directory)
-
+# Generate Meals
 if st.button('Generate Meals'):
 
   df_menu = pd.DataFrame()
-  
-  #st.download_button('Download Output', data=data_as_csv, file_name=export_file_name)
   
   while len(df_menu) < 1:
     df_prospective_meal = df_meal_directory.sample()
     #if (df_prospective_meal.iloc[0]['dish_name'] not in set (df_exclude_list['dish_name'].values)):
     if True:
       df_menu = pd.concat([df_menu, df_prospective_meal])
-  
+
+        
   # Additional Meals
-  
   while len(df_menu) < meals_count:
     df_prospective_meal = df_meal_directory.sample()
   
@@ -81,12 +66,9 @@ if st.button('Generate Meals'):
 
   for each in split_list:
     if each not in set(df['item'].values):
-      #print(each)
       df3 = df_ingredient_directory.loc[df_ingredient_directory['ingredient'] == each]
-      #print(df3)
       try:
         category = df3.iloc[0]['category']
-        #print(category)
       except:
         category = 'Unknown'
       df.loc[len(df)] = [each,category,1]
@@ -101,30 +83,24 @@ if st.button('Generate Meals'):
   my_int = int(len(df))
   my_int = my_int - 1
 
-  #df.drop([my_int], axis=0, inplace=True)
 
   df_sorted = df.sort_values(by=['category','item'], inplace=False, ascending=True)
   df_sorted.drop([my_int], axis=0, inplace=True)
 
 
   st.write(df_sorted)
-  #st.write(len(df_menu))
 
 
-  # Create Menu List PDF
+  # Create Menu Export
 
   df_menu_meal_only = df_menu[['dish_name','dish_sub_name','link']].copy()
-
-
-  #fig, ax =plt.subplots(figsize=(12,4))
-  #ax.axis('tight')
-  #ax.axis('off')
-  #the_table = ax.table(cellText=df_menu_meal_only.values,colLabels=df_menu_meal_only.columns,loc='center')
-
-  #pp = PdfPages("menu_export.pdf")
-  #pp.savefig(fig, bbox_inches='tight')
-  #pp.close()
 
   menu_data_as_csv = df_menu_meal_only.to_csv(index=False).encode("utf-8")
 
   st.download_button(label="Export_Menu",data=menu_data_as_csv,file_name="meal_menu.csv")
+
+  # Create Shopping List Export
+
+  shopping_list_as_csv = df_sorted.to_csv(index=False).encode("utf-8")
+
+  st.download_button(label="Export_Shopping_List",data=shopping_list_as_csv,file_name="shopping_list.csv")
