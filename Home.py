@@ -48,10 +48,10 @@ if st.button('Inspire Me'):
               df_menu = pd.concat([df_menu, df_prospective_meal])
 
   st.write("Menu")
-  st.dataframe(df_menu, column_config={"dish_name": "Dish", "dish_sub_name": "Accompaniments", }, hide_index=True)
-  #st.write(df_menu)
+  df_menu_display = df_menu[['dish_name','dish_sub_name','style']].copy()
+  st.dataframe(df_menu_display, column_config={"dish_name": "Dish", "dish_sub_name": "Accompaniments", "style": "Cuisine",}, hide_index=True)
 
-        
+
   # Extrapolate Ingredients and Attach Category
 
   string_list = ''
