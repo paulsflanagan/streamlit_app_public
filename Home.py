@@ -8,7 +8,7 @@ import io
 import zipfile
 
 
-st.title('Epicurean Explorer')
+st.title('Flavor Finder')
 
 
 with st.sidebar:
