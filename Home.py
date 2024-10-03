@@ -125,6 +125,6 @@ if st.button('Generate Meals'):
   #pp.savefig(fig, bbox_inches='tight')
   #pp.close()
 
-  #df_menu_html = df_menu.to_html()
+  #df_menu_export = df_menu_only.to_csv("export", encoding='utf-8', index=False)
 
-  st.download_button(label="Export_Menu",data=df_menu_meal_only,file_name="test.pdf")
+  st.download_button(label="Export_Menu",data=df_menu_meal_only,file_name="test.csv")
