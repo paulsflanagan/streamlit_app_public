@@ -8,7 +8,7 @@ import io
 import zipfile
 
 
-st.title('Flavor Finder')
+st.title('Gourmet Guru')
 
 
 with st.sidebar:
@@ -24,9 +24,8 @@ df_ingredient_directory = pd.read_csv("ingredient_directory.csv")
 
 
 
-
 # Generate Meals
-if st.button('Determine my Dinner'):
+if st.button('Make my meal plan'):
 
   df_menu = pd.DataFrame()
   
@@ -111,4 +110,4 @@ if st.button('Determine my Dinner'):
 
   zipped_file.seek(0)
 
-  st.download_button(label="Export Menu",data=zipped_file,file_name="meal_menu.zip")
+  st.download_button(label="Download Meal Plan",data=zipped_file,file_name="meal_menu.zip")
