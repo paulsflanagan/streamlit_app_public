@@ -48,7 +48,8 @@ if st.button('Inspire Me'):
               df_menu = pd.concat([df_menu, df_prospective_meal])
 
   st.write("Menu")
-  st.write(df_menu)
+  st.dataframe(df_menu)
+  #st.write(df_menu)
 
         
   # Extrapolate Ingredients and Attach Category
