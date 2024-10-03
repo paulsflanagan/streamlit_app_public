@@ -116,15 +116,15 @@ if st.button('Generate Meals'):
   df_menu_meal_only = df_menu[['dish_name','dish_sub_name','link']].copy()
 
 
-  fig, ax =plt.subplots(figsize=(12,4))
-  ax.axis('tight')
-  ax.axis('off')
-  the_table = ax.table(cellText=df_menu_meal_only.values,colLabels=df_menu_meal_only.columns,loc='center')
+  #fig, ax =plt.subplots(figsize=(12,4))
+  #ax.axis('tight')
+  #ax.axis('off')
+  #the_table = ax.table(cellText=df_menu_meal_only.values,colLabels=df_menu_meal_only.columns,loc='center')
 
-  pp = PdfPages("menu_export.pdf")
-  pp.savefig(fig, bbox_inches='tight')
-  pp.close()
+  #pp = PdfPages("menu_export.pdf")
+  #pp.savefig(fig, bbox_inches='tight')
+  #pp.close()
 
-  st.download_button(label="Export_Menu",
-                    data=pp,
-                    file_name="test.pdf")
+  df_menu_html = df_menu.to_html()
+
+  st.download_button(label="Export_Menu",data=df_menu_html,file_name="test.pdf")
