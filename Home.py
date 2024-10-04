@@ -8,9 +8,11 @@ import numpy as np
 import io
 import zipfile
 
+spb_url = st.secrets["spb_url"]
+spb_key = st.secrets["spb_key"]
+
 
 st.title('Gourmet Guru')
-
 
 with st.sidebar:
         st.title('Settings:')
