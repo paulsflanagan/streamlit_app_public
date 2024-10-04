@@ -10,7 +10,7 @@ import zipfile
 
 spb_url = st.secrets["spb_url"]
 spb_key = st.secrets["spb_key"]
-
+supabase: Client = create_client(spb_url, spb_key)
 
 st.title('Gourmet Guru')
 
@@ -114,5 +114,7 @@ if st.button('Inspire Me'):
     f.writestr("Shopping List.csv", shopping_list_as_csv)
 
   zipped_file.seek(0)
+
+  count = supabase.table('GormetGuruLogs').insert({"user_name": userName}).execute()
 
   st.download_button(label="Download",data=zipped_file,file_name="meal_menu.zip")
