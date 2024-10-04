@@ -59,8 +59,8 @@ if st.button('Inspire Me'):
   meal_number = 0
   for index, row in df_menu.iterrows():
     meal_number += 1
-    st.write(str(meal_number) + ". Cuisine: " + row['style'])
-    st.write(row['dish_name'] + " " + row['dish_sub_name'])
+    #st.write(str(meal_number) + ". Cuisine: " + row['style'])
+    st.write(str(meal_number) + ". " + row['dish_name'] + " " + row['dish_sub_name'])
     st.write("[view recipe card]("+ row['link'] +")")
     st.write("")
 
