@@ -56,7 +56,7 @@ if st.button('Inspire Me'):
   st.dataframe(df_menu_display, column_config={"dish_name": "Dish", "dish_sub_name": "Accompaniments", "style": "Cuisine",}, hide_index=True)
 
   for index, row in df_menu_display.iterrows():
-    st.write(index + ": [" + row['dish_name'] + "]("+ row['link'] +")" + row['style'])
+    st.write(str(index) + ": [" + row['dish_name'] + "]("+ row['link'] +")" + row['style'])
 
 
   # Extrapolate Ingredients and Attach Category
