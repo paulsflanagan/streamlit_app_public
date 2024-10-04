@@ -60,8 +60,8 @@ if st.button('Inspire Me'):
   for index, row in df_menu.iterrows():
     meal_number += 1
     #st.write(str(meal_number) + ". Cuisine: " + row['style'])
-    st.write(str(meal_number) + ". " + row['dish_name'] + " - " + row['dish_sub_name'] + " - (" + row['style'] + ") - " + "[view]("+ row['link'] +")")
-    st.write("")
+    st.write(str(meal_number) + ". " + row['dish_name'] )
+    st.write(" - " + row['dish_sub_name'] + " - (" + row['style'] + ") - " + "[view]("+ row['link'] +")")
 
   # Extrapolate Ingredients and Attach Category
 
