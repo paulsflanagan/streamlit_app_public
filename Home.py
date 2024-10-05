@@ -14,10 +14,12 @@ supabase: Client = create_client(spb_url, spb_key)
 userName = st.experimental_user.email
 
 st.title('Gourmet Guru')
-#col1, col2 = st.columns([1, 3])
-#st.write("ignore this testing something...")
-#col1.image("img/Gochujang Salmon Poke Bowl Small.jpeg")
-#col2.write("1. Gochujang Salmon Poke Bowl Small  \n with Sesame Sweet Potato and Smacked Cucumber  \n (Korean)  \n[view recipe](https://drive.google.com/file/d/1bYXra2YLgPNHpicqFlTA7bSHacX8nrYO/view?usp=sharing)")
+col1, col2 = st.columns([1, 3])
+st.write("ignore this testing something...")
+col1.image("img/Gochujang Salmon Poke Bowl Small.jpeg")
+col2.write("1. Gochujang Salmon Poke Bowl Small  \n with Sesame Sweet Potato and Smacked Cucumber  \n (Korean)  \n[view recipe](https://drive.google.com/file/d/1bYXra2YLgPNHpicqFlTA7bSHacX8nrYO/view?usp=sharing)")
+col1.image("img/Gochujang Salmon Poke Bowl Small.jpeg")
+col2.write("1. Gochujang Salmon Poke Bowl Small  \n with Sesame Sweet Potato and Smacked Cucumber  \n (Korean)  \n[view recipe](https://drive.google.com/file/d/1bYXra2YLgPNHpicqFlTA7bSHacX8nrYO/view?usp=sharing)")
 
 with st.sidebar:
         st.title('Settings:')
