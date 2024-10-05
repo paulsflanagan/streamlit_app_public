@@ -16,8 +16,8 @@ userName = st.experimental_user.email
 st.title('Gourmet Guru')
 col1, col2 = st.columns([1, 3])
 st.write("ignore this testing something...")
-col1.image("https://drive.google.com/file/d/1QAMMgwNjXJaCQYf-xR33onVGxFZrJ_Nb/view?usp=sharing")
-col2.write("![Image Description](\"https://s3-us-west-2.amazonaws.com/uw-s3-cdn/wp-content/uploads/sites/6/2017/11/04133712/waterfall.jpg\")  \n 1. Gochujang Salmon Poke Bowl Small  \n with Sesame Sweet Potato and Smacked Cucumber  \n Korean [view](https://drive.google.com/file/d/1d_zJVS2G8tNA2rFVzRF1LM3pKUpdlzDX/view?usp=sharing)")
+col1.image("img/Gochujang Salmon Poke Bowl Small.jpeg")
+col2.write("1. Gochujang Salmon Poke Bowl Small  \n with Sesame Sweet Potato and Smacked Cucumber  \n Korean [view](https://drive.google.com/file/d/1d_zJVS2G8tNA2rFVzRF1LM3pKUpdlzDX/view?usp=sharing)")
 
 with st.sidebar:
         st.title('Settings:')
