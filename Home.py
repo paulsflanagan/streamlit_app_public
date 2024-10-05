@@ -16,7 +16,7 @@ userName = st.experimental_user.email
 st.title('Gourmet Guru')
 #col1, col2 = st.columns([1, 3])
 #st.write("ignore this testing something...")
-#col1.image("img/test.jpeg")
+#col1.image("img/1. Teriyaki Prawn Poke Style Bowl Small.jpeg")
 #col2.write("1. Gochujang Salmon Poke Bowl  \n with Sesame Sweet Potato and Smacked Cucumber  \n (Korean)  \n[view recipe](https://drive.google.com/file/d/1bYXra2YLgPNHpicqFlTA7bSHacX8nrYO/view?usp=sharing)")
 #col1.image("img/Arroz Con Pollo.jpeg")
 #col2.write("1. Gochujang Salmon Poke Bowl  \n with Sesame Sweet Potato and Smacked Cucumber  \n (Korean)  \n[view recipe](https://drive.google.com/file/d/1bYXra2YLgPNHpicqFlTA7bSHacX8nrYO/view?usp=sharing)")
