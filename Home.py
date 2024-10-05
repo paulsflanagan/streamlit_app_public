@@ -14,6 +14,8 @@ supabase: Client = create_client(spb_url, spb_key)
 userName = st.experimental_user.email
 
 st.title('Gourmet Guru')
+st.write("ignore this testing something...")
+st.write("1. Gochujang Salmon Poke Bowl Small  \n with Sesame Sweet Potato and Smacked Cucumber  \n Korean [view](https://drive.google.com/file/d/1d_zJVS2G8tNA2rFVzRF1LM3pKUpdlzDX/view?usp=sharing)")
 
 with st.sidebar:
         st.title('Settings:')
