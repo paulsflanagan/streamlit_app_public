@@ -18,7 +18,9 @@ col1, col2 = st.columns([1, 3])
 st.write("ignore this testing something...")
 #col1.image("img/Gochujang Salmon Poke Bowl Small.jpeg")
 #st.markdown("![Foo](http://www.google.com.au/images/nav_logo7.png)(http://google.com.au/)")
-col2.write("[![TBC](img/Gochujang Salmon Poke Bowl Small.jpeg)](https://drive.google.com/file/d/1bYXra2YLgPNHpicqFlTA7bSHacX8nrYO/view?usp=sharing) 1. Gochujang Salmon Poke Bowl Small  \n with Sesame Sweet Potato and Smacked Cucumber  \n Korean  \n[view recipe](https://drive.google.com/file/d/1bYXra2YLgPNHpicqFlTA7bSHacX8nrYO/view?usp=sharing)")
+col1.markdown("[![TBC](img/Gochujang Salmon Poke Bowl Small.jpeg)](https://drive.google.com/file/d/1bYXra2YLgPNHpicqFlTA7bSHacX8nrYO/view?usp=sharing)")
+
+col2.write("1. Gochujang Salmon Poke Bowl Small  \n with Sesame Sweet Potato and Smacked Cucumber  \n Korean  \n[view recipe](https://drive.google.com/file/d/1bYXra2YLgPNHpicqFlTA7bSHacX8nrYO/view?usp=sharing)")
 
 with st.sidebar:
         st.title('Settings:')
