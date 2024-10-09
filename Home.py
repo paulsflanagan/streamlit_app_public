@@ -64,8 +64,6 @@ if st.button('Inspire Me'):
 
   #meal_number = 0
   for index, row in df_menu.iterrows():
-    #meal_number += 1
-    #st.write(str(meal_number) + ". Cuisine: " + row['style'])
     st.image("img/" + str(row['id']) + ". " + row['dish_name'] + ".jpg")
     st.write(str(row['id'] + ". " + row['dish_name'] + "  \n " + row['dish_sub_name'] + "  \n (" + row['style'] + ") - " + "[view]("+ row['link'] +")")
     st.write(" ")
