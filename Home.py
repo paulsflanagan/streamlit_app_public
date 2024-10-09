@@ -62,12 +62,12 @@ if st.button('Inspire Me'):
   #st.dataframe(df_menu_display, column_config={"dish_name": "Dish", "dish_sub_name": "Accompaniments", "style": "Cuisine",}, hide_index=True)
 
 
-  meal_number = 0
+  #meal_number = 0
   for index, row in df_menu.iterrows():
-    meal_number += 1
+    #meal_number += 1
     #st.write(str(meal_number) + ". Cuisine: " + row['style'])
     st.image("img/" + str(row['id']) + ". " + row['dish_name'] + ".jpg")
-    st.write(str(meal_number) + ". " + row['dish_name'] + "  \n " + row['dish_sub_name'] + "  \n (" + row['style'] + ") - " + "[view]("+ row['link'] +")")
+    st.write(str(row['id'] + ". " + row['dish_name'] + "  \n " + row['dish_sub_name'] + "  \n (" + row['style'] + ") - " + "[view]("+ row['link'] +")")
     st.write(" ")
 
   # Extrapolate Ingredients and Attach Category
