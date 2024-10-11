@@ -60,7 +60,7 @@ if search_string:
     for each in search_string_list:
       if each in dish_name_key_words:
         #st.write(each)
-        df_search_rows = df_meal_directory.loc[df_meal_directory['dish_name'].str.contains(each, case=False) || df_meal_directory['dish_sub_name'].str.contains(each, case=False)]
+        df_search_rows = df_meal_directory.loc[df_meal_directory['dish_name'].str.contains(each, case=False) or df_meal_directory['dish_sub_name'].str.contains(each, case=False)]
         search_rows = list(df_search_rows['id'])
         for row in search_rows:
           #st.write(row)
