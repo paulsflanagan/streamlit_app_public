@@ -27,4 +27,4 @@ df_ingredient_directory = pd.read_csv('ingredient_directory.csv')
 # Generate Meals
 if st.button('ID Search'):
   st.write('Hello!')
-  st.write(df_meal_directory.loc[df_meal_directory['id'] == '3'])
+  st.write(df_meal_directory.loc[df_meal_directory['id'] == 3])
