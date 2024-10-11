@@ -23,7 +23,7 @@ df_meal_directory = pd.read_csv('meal_directory.csv')
 df_ingredient_directory = pd.read_csv('ingredient_directory.csv')
 
 
-meal_id = st.input_text('meal id')
+meal_id = st.text_input('meal id')
 # Generate Meals
 if st.button('Search'):
   st.write(df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)])
