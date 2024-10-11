@@ -27,3 +27,4 @@ meal_id = st.chat_input('meal id')
 # Generate Meals
 if meal_id:
   st.write(df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)])
+  df_display = df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)]
