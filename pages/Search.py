@@ -31,7 +31,7 @@ dish_sub_name_list = list(df_meal_directory['dish_sub_name'])
 ingredients_list = list(df_meal_directory['ingredients'])
 search_key_words = []
 st.write(search_key_words)
-stop_words = ['and', 'in', '\'n\'', 'a', 'la', '&', 'with']
+stop_words = ['and', 'in', '\'n\'', 'a', 'la', '&', 'with', 'style', 'ultimate', 'quick', 'pan']
 
 for each in dish_name_list:
    dish_name_list_split = each.split(" ")
