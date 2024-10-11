@@ -31,7 +31,9 @@ if meal_id:
   try:
     df_display = df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)]
   except:
-    st.write('')
+    pass
+
+        
   for index, row in df_display.iterrows():
     st.image("img/" + str(row['id']) + ". " + row['dish_name'] + ".jpg")
     st.write(str(row['id']) + ". " + row['dish_name'] + "  \n " + row['dish_sub_name'] + "  \n (" + row['style'] + ") - " + "[view]("+ row['link'] +")")
