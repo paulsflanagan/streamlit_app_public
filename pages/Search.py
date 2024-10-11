@@ -58,7 +58,7 @@ for each in ingredients_list:
        if word not in search_key_words:
          search_key_words.append(word)
                
-st.write(search_key_words)
+#st.write(search_key_words)
 ##
 
 result_dictionary = {}
