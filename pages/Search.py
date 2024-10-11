@@ -4,6 +4,7 @@ from supabase import create_client, Client
 import time
 import streamlit as st
 import pandas as pd
+import re
 
 
 spb_url = st.secrets["spb_url"]
@@ -50,7 +51,7 @@ for each in dish_sub_name_list:
          search_key_words.append(word)
                
 for each in ingredients_list:
-   ingredients_list_split = each.split(",")
+   ingredients_list_split = re.split(',| ', each)
    for word in ingredients_list_split:
      word = word.lower().replace(',', '')
      if word not in stop_words:
