@@ -23,6 +23,9 @@ df_meal_directory = pd.read_csv('meal_directory.csv')
 df_ingredient_directory = pd.read_csv('ingredient_directory.csv')
 df_display = pd.DataFrame()
 
+dish_name_active_words = list(df_meal_directory['dish_name'])
+st.write(dish_name_active_words)
+
 stop_words = ['and', 'i' '']
 
 search_string = st.chat_input('meal id')
