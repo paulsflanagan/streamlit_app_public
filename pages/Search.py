@@ -74,7 +74,7 @@ if search_string:
             result_dictionary[row] = 1
     #here
     df_results = pd.DataFrame(result_dictionary.items())
-    df_results = dfdf_results.drop(df.loc[df['1']==1].index, inplace=True)
+    df_results = df_results.drop(df.loc[df['1']==1].index, inplace=True)
     df_results = df_results.sort_values(by=1, ascending=False)
     results = list(df_results[0])
     st.write(results)
