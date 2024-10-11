@@ -31,7 +31,9 @@ if meal_id:
   try:
     df_display = df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)]
   except:
-    pass
+    x = meal_id.split(" ")
+    for each in x:
+      st.write(each)
 
         
   for index, row in df_display.iterrows():
