@@ -55,7 +55,7 @@ if search_string:
         df_search_rows = df_meal_directory.loc[df_meal_directory['dish_name'].str.contains(each, case=False)]
         search_rows = list(df_search_rows['id'])
         for row in search_rows:
-          st.write(row)
+          #st.write(row)
           try:
             counter = result_dictionary[row]
             counter = counter + 1
