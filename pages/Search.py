@@ -93,7 +93,7 @@ if search_string:
     df_results = df_results.sort_values(by='b', ascending=False)
     df_results = df_results[df_results.b > 1]
     results = list(df_results['a'])
-    #st.write(results)
+    st.write(results)
     x = 0
     for each in results:
       while x < 5:
