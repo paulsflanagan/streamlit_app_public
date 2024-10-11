@@ -76,7 +76,7 @@ if search_string:
     df_results = pd.DataFrame(result_dictionary.items())
     df_results = df_results.sort_values(by=1, ascending=False)
     results = list(df_results[0])
-    st.write(results)
+    #st.write(results)
     x = 0
     for each in results:
       while x < 5:
