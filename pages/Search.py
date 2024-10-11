@@ -98,7 +98,7 @@ if search_string:
     st.write(results)
     x = 0
     for each in results:
-      while x < 5:
+      if x < 5:
         #here
         df_buffer = df_meal_directory.loc[df_meal_directory['id'] == int(results[x])]
         df_display = pd.concat([df_display, df_buffer])
