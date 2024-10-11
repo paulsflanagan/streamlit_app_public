@@ -23,7 +23,7 @@ df_meal_directory = pd.read_csv('meal_directory.csv')
 df_ingredient_directory = pd.read_csv('ingredient_directory.csv')
 df_display = pd.DataFrame()
 
-stop_words = ['mongoose', 'and']
+stop_words = ['and', 'i' '']
 
 search_string = st.chat_input('meal id')
 # Generate Meals
