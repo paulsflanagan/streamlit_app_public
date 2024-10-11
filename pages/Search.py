@@ -27,6 +27,7 @@ df_display = pd.DataFrame()
 
 ## Filter Key words from dish names
 dish_name_list = list(df_meal_directory['dish_name'])
+dish_sub_name_list = list(df_meal_directory['dish_sub_name'])
 dish_name_key_words = []
 stop_words = ['and', 'in', '\'n\'', 'a', 'la', '&']
 
@@ -36,7 +37,13 @@ for each in dish_name_list:
      if word not in stop_words:
        if word not in dish_name_key_words:
          dish_name_key_words.append(word.lower())
-
+               
+for each in dish_sub_name_list:
+   dish_name_list_split = each.split(" ")
+   for word in dish_name_list_split:
+     if word not in stop_words:
+       if word not in dish_name_key_words:
+         dish_name_key_words.append(word.lower())
 ##
 
 result_dictionary = {}
@@ -53,7 +60,7 @@ if search_string:
     for each in search_string_list:
       if each in dish_name_key_words:
         #st.write(each)
-        df_search_rows = df_meal_directory.loc[df_meal_directory['dish_name'].str.contains(each, case=False)]
+        df_search_rows = df_meal_directory.loc[df_meal_directory['dish_name'].str.contains(each, case=False) || df_meal_directory['dish_sub_name'].str.contains(each, case=False)]
         search_rows = list(df_search_rows['id'])
         for row in search_rows:
           #st.write(row)
