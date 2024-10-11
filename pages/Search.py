@@ -37,6 +37,12 @@ if search_string:
     for each in search_string_list:
       if each not in stop_words:
         st.write(each)
+        df_search_rows = df_meal_directory.loc[df_meal_directory['dish_name'].str.contains(each)]
+        st.write(df_search_rows)
+        #df_prospective_meals = 
+        #if (df_prospective_meal.iloc[0]['base_ingredient'] not in set(df_menu['base_ingredient'].values)):
+        #df_menu = pd.concat([df_menu, df_prospective_meal])
+        
       
 
         
