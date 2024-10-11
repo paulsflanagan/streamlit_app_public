@@ -91,8 +91,8 @@ if search_string:
     #here
     df_results = pd.DataFrame(result_dictionary.items(), columns=list('abc'))
     df_results = df_results.sort_values(by=b, ascending=False)
-    df_results = df_results[df_results.b > 1)
-    results = list(df_results[0])
+    df_results = df_results[df_results.b > 1]
+    results = list(df_results['a'])
     #st.write(results)
     x = 0
     for each in results:
