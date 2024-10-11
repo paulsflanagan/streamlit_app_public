@@ -74,19 +74,16 @@ if search_string:
             result_dictionary[row] = 1
     #here
     df_results = pd.DataFrame(result_dictionary.items())
-    st.write(df_results)
     df_results = df_results.sort_values(by=1, ascending=False)
-    st.write(df_results)
-    df_results = df_results.drop(df_results.loc[df_results[1]=='1'].index, inplace=True)
-    st.write(df_results)
     results = list(df_results[0])
     st.write(results)
     x = 0
-    while x < 5:
-      #here
-      df_buffer = df_meal_directory.loc[df_meal_directory['id'] == int(results[x])]
-      df_display = pd.concat([df_display, df_buffer])
-      x = x+1
+    for each in results:
+      while x < 5:
+        #here
+        df_buffer = df_meal_directory.loc[df_meal_directory['id'] == int(results[x])]
+        df_display = pd.concat([df_display, df_buffer])
+        x = x+1
 
   #st.write(result_dictionary)
           #counter = result_dictionary[rows]
