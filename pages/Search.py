@@ -38,6 +38,7 @@ for each in dish_name_list:
 
 ##
 
+result_dictionary = {}
 
 search_string = st.chat_input('meal id')
 # Generate Meals
