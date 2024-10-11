@@ -62,7 +62,7 @@ if search_string:
             result_dictionary[row] = counter
           except:
             result_dictionary[row] = 1
-  st.write(result_dictionar)
+  st.write(result_dictionary)
           #counter = result_dictionary[rows]
         #st.write(df_search_rows)
         #df_prospective_meals = 
