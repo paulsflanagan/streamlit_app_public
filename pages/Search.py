@@ -26,5 +26,9 @@ df_ingredient_directory = pd.read_csv('ingredient_directory.csv')
 meal_id = st.chat_input('meal id')
 # Generate Meals
 if meal_id:
-  st.write(df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)])
+  #st.write(df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)])
   df_display = df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)]
+  for index, row in df_display.iterrows():
+    st.image("img/" + str(row['id']) + ". " + row['dish_name'] + ".jpg")
+    st.write(str(row['id']) + ". " + row['dish_name'] + "  \n " + row['dish_sub_name'] + "  \n (" + row['style'] + ") - " + "[view]("+ row['link'] +")")
+    st.write(" ")
