@@ -64,7 +64,7 @@ if search_string:
           except:
             result_dictionary[row] = 1
     #here
-    df_results = pd.DataFrame(result_dictionary)
+    df_results = pd.DataFrame(result_dictionary.items())
     st.write(df_results)
   #st.write(result_dictionary)
           #counter = result_dictionary[rows]
