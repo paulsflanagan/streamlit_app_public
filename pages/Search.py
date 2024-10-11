@@ -20,7 +20,7 @@ with st.sidebar:
 
 # Import Meal Directory and Ingredient Directory
 #df_meal_directory = pd.read_csv('meal_directory.csv')
-df_ingredient_directory = pd.read_csv('directories/ingredient_directory.csv')
+#df_ingredient_directory = pd.read_csv('directories/ingredient_directory.csv')
 
 
 
