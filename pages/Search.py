@@ -3,6 +3,11 @@ from supabase import create_client, Client
 import time
 import streamlit as st
 import pandas as pd
+import os
+
+meal_directory_path = os.path.realpath("../meal_directory.csv")
+ingredient_directory_path = os.path.realpath("../ingredient_directory.csv")
+
 
 spb_url = st.secrets["spb_url"]
 spb_key = st.secrets["spb_key"]
@@ -18,8 +23,8 @@ with st.sidebar:
 
 
 # Import Meal Directory and Ingredient Directory
-df_meal_directory = pd.read_csv("../meal_directory.csv")
-df_ingredient_directory = pd.read_csv("../ingredient_directory.csv")
+df_meal_directory = pd.read_csv(meal_directory_path)
+df_ingredient_directory = pd.read_csv(ingredient_directory_path)
 
 
 
