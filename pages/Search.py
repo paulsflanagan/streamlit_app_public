@@ -66,6 +66,7 @@ if search_string:
     #here
     df_results = pd.DataFrame(result_dictionary.items())
     df_results = df_results.sort_values(by=1, ascending=False)
+    st.write(df_results)
     results = list(df_results[0])
     st.write(results)
 
