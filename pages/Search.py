@@ -53,7 +53,11 @@ if search_string:
       if each in dish_name_key_words:
         st.write(each)
         df_search_rows = df_meal_directory.loc[df_meal_directory['dish_name'].str.contains(each, case=False)]
-        st.write(df_search_rows)
+        search_rows = list(df_search_rows['id'])
+        for row in search_rows:
+          st.write(row)
+          #counter = result_dictionary[rows]
+        #st.write(df_search_rows)
         #df_prospective_meals = 
         #if (df_prospective_meal.iloc[0]['base_ingredient'] not in set(df_menu['base_ingredient'].values)):
         #df_menu = pd.concat([df_menu, df_prospective_meal])
