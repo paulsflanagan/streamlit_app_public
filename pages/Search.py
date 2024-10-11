@@ -91,7 +91,14 @@ if search_string:
     #here
     df_results = pd.DataFrame(result_dictionary.items(), columns=list('ab'))
     df_results = df_results.sort_values(by='b', ascending=False)
-    df_results = df_results[df_results.b > 1]
+    if len(df_results.index) <= 5:
+      pass
+    else:
+      df_results_try = df_results[df_results.b > 1]
+      if len(df_results_try.index) <= 5:
+        pass
+      else:
+        df_results = df_results[df_results.b > 1]
     results = list(df_results['a'])
     x = 0
     for each in results:
