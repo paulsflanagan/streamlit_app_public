@@ -89,7 +89,7 @@ if search_string:
           except:
             result_dictionary[row] = 1
     #here
-    df_results = pd.DataFrame(result_dictionary.items(), columns=list('abc'))
+    df_results = pd.DataFrame(result_dictionary.items(), columns=list('ab'))
     df_results = df_results.sort_values(by=b, ascending=False)
     df_results = df_results[df_results.b > 1]
     results = list(df_results['a'])
