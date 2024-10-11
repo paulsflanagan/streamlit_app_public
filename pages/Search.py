@@ -35,7 +35,7 @@ if search_string:
   except:
     search_string_list = search_string.split(" ")
     for each in search_string_list:
-      if each not in stop_wrods:
+      if each not in stop_words:
         st.write(each)
       
 
