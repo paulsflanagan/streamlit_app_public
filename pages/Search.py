@@ -25,13 +25,18 @@ df_display = pd.DataFrame()
 
 dish_name_list = list(df_meal_directory['dish_name'])
 
+dish_name_key_words = []
+stop_words = ['and', 'i' '']
+
 for each in dish_name_list:
    dish_name_list_split = each.split(" ")
    for word in dish_name_list_split:
-     st.write(word)
-#st.write(dish_name_active_words)
+     if word not in stop_words:
+       if word not in dish_name_key_words:
+         dish_name_key_words.append(word)
+st.write(dish_name_key_words)
 
-stop_words = ['and', 'i' '']
+
 
 search_string = st.chat_input('meal id')
 # Generate Meals
