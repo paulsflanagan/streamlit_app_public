@@ -34,7 +34,7 @@ for each in dish_name_list:
    for word in dish_name_list_split:
      if word not in stop_words:
        if word not in dish_name_key_words:
-         dish_name_key_words.append(word)
+         dish_name_key_words.append(lower(word))
 
 ##
 
