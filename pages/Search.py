@@ -36,9 +36,10 @@ stop_words = ['and', 'in', '\'n\'', 'a', 'la', '&', 'with', 'style', 'ultimate',
 for each in dish_name_list:
    dish_name_list_split = each.split(" ")
    for word in dish_name_list_split:
-     if word.lower() not in stop_words:
-       if word.lower() not in search_key_words:
-         search_key_words.append(word.lower())
+     word = word.lower().replace(',', '')
+     if word not in stop_words:
+       if word not in search_key_words:
+         search_key_words.append(word)
                
 for each in dish_sub_name_list:
    dish_sub_name_list_split = each.split(" ")
