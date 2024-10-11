@@ -30,7 +30,8 @@ dish_name_list = list(df_meal_directory['dish_name'])
 dish_sub_name_list = list(df_meal_directory['dish_sub_name'])
 ingredients_list = list(df_meal_directory['ingredients'])
 search_key_words = []
-stop_words = ['and', 'in', '\'n\'', 'a', 'la', '&']
+st.write(search_key_words)
+stop_words = ['and', 'in', '\'n\'', 'a', 'la', '&', 'with']
 
 for each in dish_name_list:
    dish_name_list_split = each.split(" ")
@@ -52,6 +53,8 @@ for each in ingredients_list:
      if word not in stop_words:
        if word not in search_key_words:
          search_key_words.append(word.lower())
+               
+st.write(search_key_words)
 ##
 
 result_dictionary = {}
@@ -93,15 +96,6 @@ if search_string:
         df_buffer = df_meal_directory.loc[df_meal_directory['id'] == int(results[x])]
         df_display = pd.concat([df_display, df_buffer])
         x = x+1
-
-  #st.write(result_dictionary)
-          #counter = result_dictionary[rows]
-        #st.write(df_search_rows)
-        #df_prospective_meals = 
-        #if (df_prospective_meal.iloc[0]['base_ingredient'] not in set(df_menu['base_ingredient'].values)):
-        #df_menu = pd.concat([df_menu, df_prospective_meal])
-        
-      
 
         
   for index, row in df_display.iterrows():
