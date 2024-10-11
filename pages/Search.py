@@ -23,17 +23,21 @@ df_meal_directory = pd.read_csv('meal_directory.csv')
 df_ingredient_directory = pd.read_csv('ingredient_directory.csv')
 df_display = pd.DataFrame()
 
-meal_id = st.chat_input('meal id')
+stop_words = ['mongoose', 'and']
+
+search_string = st.chat_input('meal id')
 # Generate Meals
-if meal_id:
+if search_string:
   #st.write(df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)])
 
   try:
-    df_display = df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)]
+    df_display = df_meal_directory.loc[df_meal_directory['id'] == int(search_string)]
   except:
-    x = meal_id.split(" ")
-    for each in x:
-      st.write(each)
+    search_string_list = search_string.split(" ")
+    for each in search_string_list:
+      if each not in stop_wrods:
+        st.write(each)
+      
 
         
   for index, row in df_display.iterrows():
