@@ -56,6 +56,13 @@ if search_string:
         search_rows = list(df_search_rows['id'])
         for row in search_rows:
           st.write(row)
+          try:
+            counter = result_dictionary[row]
+            counter = counter + 1
+            result_dictionary[row] = counter
+          except:
+            result_dictionary[row] = 1
+  st.write(result_dictionar)
           #counter = result_dictionary[rows]
         #st.write(df_search_rows)
         #df_prospective_meals = 
