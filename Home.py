@@ -44,6 +44,7 @@ except:
 
 
 #Allergy Filter
+df_meal_directory_buffer = pd.DataFrame()
 df_meal_directory_buffer = df_meal_directory_pre_allergy
 
 if allergy_nuts:
