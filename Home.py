@@ -51,7 +51,7 @@ if allergy_fish:
 
 df_meal_directory = df_meal_directory_buffer
 
-st.write(df_meal_directory)
+#st.write(df_meal_directory)
 
 # Generate Meals
 if st.button('Inspire Me'):
