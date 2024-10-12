@@ -41,7 +41,7 @@ df_ingredient_directory = pd.read_csv("ingredient_directory.csv")
 df_meal_directory = df_meal_directory_pre_allergy
 
 if allergy_nuts:
-  df_meal_directory = df_meal_directory_pre_allergy[df_meal_directory_pre_allergy['ingredient'].str.contains('nut') == False]
+  df_meal_directory = df_meal_directory_pre_allergy[df_meal_directory_pre_allergy['ingredients'].str.contains('nut') == False]
 
 
 # Generate Meals
