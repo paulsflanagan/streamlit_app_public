@@ -39,12 +39,13 @@ try:
 except:
   st.write("Update in Progress")
   app_operational = False
+  df_meal_directory_pre_allergy = pd.DataFrame()
+  df_ingredient_directory = pd.DataFrame()
   
 
 
 
 #Allergy Filter
-df_meal_directory_buffer = pd.DataFrame()
 df_meal_directory_buffer = df_meal_directory_pre_allergy
 
 if allergy_nuts:
