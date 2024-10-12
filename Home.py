@@ -32,9 +32,16 @@ with st.sidebar:
 
 
 # Import Meal Directory and Ingredient Directory
-df_meal_directory = pd.read_csv("meal_directory.csv")
+df_meal_directory_pre_allergy = pd.read_csv("meal_directory.csv")
 df_ingredient_directory = pd.read_csv("ingredient_directory.csv")
 
+
+
+#Allergy Filter
+df_meal_directory = df_meal_directory_pre_allergy
+
+if allergy_nuts:
+  df_meal_directory = df_meal_directory_pre_allergy[df_meal_directory_pre_allergy['ingredient'].str.contains('nut') == False]
 
 
 # Generate Meals
@@ -58,8 +65,7 @@ if st.button('Inspire Me'):
         if (df_prospective_meal.iloc[0]['style'] not in set(df_menu['style'].values)):
           if (df_prospective_meal.iloc[0]['main_ingredient'] not in set(df_menu['main_ingredient'].values)):
             if (df_prospective_meal.iloc[0]['base_ingredient'] not in set(df_menu['base_ingredient'].values)):
-               if allergy_nuts:     
-                 df_menu = pd.concat([df_menu, df_prospective_meal])
+              df_menu = pd.concat([df_menu, df_prospective_meal])
 
   st.subheader("Meal Selection")
   #df_menu_display = df_menu[['dish_name','dish_sub_name','style','link']].copy()
