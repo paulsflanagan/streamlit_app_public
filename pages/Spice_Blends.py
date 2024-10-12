@@ -1,5 +1,18 @@
 import streamlit as st
 
+spb_url = st.secrets["spb_url"]
+spb_key = st.secrets["spb_key"]
+supabase: Client = create_client(spb_url, spb_key)
+userName = st.experimental_user.email
+
+st.title('Gourmet Guru')
+
+with st.sidebar:
+        st.title('Settings:')
+        st.text("User: " + str(st.experimental_user['email']))
+        st.divider()
+
+
 st.subheader("All American Spice Blend")
 st.write("""
 * 		1 tbsp ground cumin
