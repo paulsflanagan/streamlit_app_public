@@ -1,7 +1,7 @@
 import streamlit as st
 
 st.text_area(
-"
+"""
   
 All American Spice Blend
 * 		1 tbsp ground cumin
@@ -243,5 +243,5 @@ Tuscan Heat Spice Blend
 
   
   
-"
+"""
 )
