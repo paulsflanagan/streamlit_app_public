@@ -63,7 +63,7 @@ for each in ingredients_list:
 
 result_dictionary = {}
 
-search_string = st.chat_input('meal id')
+search_string = st.chat_input('meal id or ingredients')
 # Generate Meals
 if search_string:
   #st.write(df_meal_directory.loc[df_meal_directory['id'] == int(meal_id)])
