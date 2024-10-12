@@ -37,7 +37,7 @@ try:
   df_meal_directory_pre_allergy = pd.read_csv("meal_directory.csv")
   df_ingredient_directory = pd.read_csv("ingredient_directory.csv")
 except:
-  st.write("Update in Progress")
+  st.write("Update in Progress - Wont be Long!")
   app_lock = True
   df_meal_directory_pre_allergy = pd.DataFrame()
   df_ingredient_directory = pd.DataFrame()
