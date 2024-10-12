@@ -111,7 +111,7 @@ if st.button('Inspire Me'):
 
   # Create Menu Export
 
-  df_menu_meal_only = df_menu[['dish_name','dish_sub_name','link']].copy()
+  df_menu_meal_only = df_menu[['id','dish_name','dish_sub_name','link']].copy()
 
   menu_data_as_csv = df_menu_meal_only.to_csv(index=False).encode("utf-8")
 
