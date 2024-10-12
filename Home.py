@@ -25,6 +25,9 @@ with st.sidebar:
         st.title('Settings:')
         st.text("User: " + str(st.experimental_user['email']))
         st.divider()
+        st.title('Allergies:')
+        allergy_nuts = st.checkbox("Misc nuts")
+        st.divider()
         meals_count = st.slider('How Many Meals?', 1, 5, 5)
 
 
@@ -55,7 +58,8 @@ if st.button('Inspire Me'):
         if (df_prospective_meal.iloc[0]['style'] not in set(df_menu['style'].values)):
           if (df_prospective_meal.iloc[0]['main_ingredient'] not in set(df_menu['main_ingredient'].values)):
             if (df_prospective_meal.iloc[0]['base_ingredient'] not in set(df_menu['base_ingredient'].values)):
-              df_menu = pd.concat([df_menu, df_prospective_meal])
+               if allergy_nuts:     
+                 df_menu = pd.concat([df_menu, df_prospective_meal])
 
   st.subheader("Meal Selection")
   #df_menu_display = df_menu[['dish_name','dish_sub_name','style','link']].copy()
