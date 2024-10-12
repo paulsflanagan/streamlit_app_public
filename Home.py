@@ -59,7 +59,7 @@ df_meal_directory = df_meal_directory_buffer
 #st.write(df_meal_directory)
 
 # Generate Meals
-if st.button('Inspire Me') && app_operational:
+if st.button('Inspire Me') and app_operational:
 
   df_menu = pd.DataFrame()
   
