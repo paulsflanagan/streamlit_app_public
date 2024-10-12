@@ -18,7 +18,7 @@ st.write("""
 """)
 
 st.subheader("Berbere Spice Blend")
-st.text_area("""
+st.write("""
 * 		3 part paprika
 * 		1 part cayenne
 * 		.5 part ground coriander
@@ -28,7 +28,7 @@ st.text_area("""
 """)
 
 st.subheader("Bold and Savory Steak Spice Blend")
-st.text_area("""
+st.write("""
 * 		1 part red chili flake
 * 		1 part crushed coriander seed
 * 		2 parts crushed dill seed
@@ -38,7 +38,7 @@ st.text_area("""
 """)
 
 st.subheader("Blackening Spice Blend")
-st.text_area("""
+st.write("""
 * 		3 tsp smoked paprika
 * 		1.5 tsp garlic powder
 * 		.5 tsp white pepper
@@ -50,7 +50,7 @@ st.text_area("""
 
 
 st.subheader("Burger Spice Blend")
-st.text_area("""
+st.write("""
 * 		1 Tbsp paprika
 * 		1 1/4 tsp salt
 * 		1 tsp ground black pepper
@@ -61,7 +61,7 @@ st.text_area("""
 """)
 
 st.subheader("Cajun Spice Blend")
-st.text_area("""
+st.write("""
 * 		2 part paprika
 * 		2 part onion powder
 * 		1 part garlic powder
@@ -72,7 +72,7 @@ st.text_area("""
 """)
 
 st.subheader("Enchilada Spice Blend")
-st.text_area("""
+st.write("""
 * 		1 tbsp. chili powder
 * 		1 tbsp. paprika
 * 		2 tsp. cumin
@@ -88,7 +88,7 @@ st.text_area("""
 """)
 
 st.subheader("Fall Spice Blend")
-st.text_area("""
+st.write("""
 * 		3 parts dried thyme
 * 		3 parts ground sage
 * 		2 parts garlic powder
@@ -96,7 +96,7 @@ st.text_area("""
 """)
 
 st.subheader("Fry Seasoning")
-st.text_area("""
+st.write("""
 * 		1 part garlic powder
 * 		1 part onion powder
 * 		1 part paprika
@@ -104,7 +104,7 @@ st.text_area("""
 
 
 st.subheader("Herbes de Provence Blend")
-st.text_area("""
+st.write("""
 * 		1 part savory
 * 		1 part thyme
 * 		1 part rosemary
@@ -114,7 +114,7 @@ st.text_area("""
 """)
 
 st.subheader("Italian Seasoning Blend")
-st.text_area("""
+st.write("""
 * 		1 part garlic powder
 * 		1 part oregano
 * 		1 part basil
@@ -123,13 +123,13 @@ st.text_area("""
 """)
 
 st.subheader("Meatloaf Seasoning")
-st.text_area("""
+st.write("""
 * 		2 parts onion powder
 * 		2 parts garlic powder
 """)
 
 st.subheader("Mediterranean Spice Blend")
-st.text_area("""
+st.write("""
 * 		2 parts dried oregano
 * 		1 part dried mint
 * 		1 part sumac
@@ -137,7 +137,7 @@ st.text_area("""
 """)
 
 st.subheader("Mexican Spice Blend")
-st.text_area("""
+st.write("""
 * 		2 parts chili powder
 * 		1 part oregano
 * 		1 part smoked paprika
@@ -145,13 +145,13 @@ st.text_area("""
 """)
 
 st.subheader("Moo Shu Spice Blend")
-st.text_area("""
+st.write("""
 * 		1 part ground ginger
 * 		1 part garlic powder
 """)
 
 st.subheader("Ranch Spice Blend")
-st.text_area("""
+st.write("""
 * 		2 part dried parsley
 * 		1 1/2 parts dried dill weed
 * 		2 parts dried garlic powder
@@ -162,7 +162,7 @@ st.text_area("""
 """)
 
 st.subheader("Shawarma Spice Blend")
-st.text_area("""
+st.write("""
 * 		2 part tumeric
 * 		2 part cumin
 * 		1 part dried coriander
@@ -173,14 +173,14 @@ st.text_area("""
 """)
 
 st.subheader("Southwest Spice Blend")
-st.text_area("""
+st.write("""
 * 		4 part garlic powder
 * 		2 part cumin
 * 		2 part chili powder
 """)
 
 st.subheader("Smoky BBQ Seasoning")
-st.text_area("""
+st.write("""
 * 		8 parts smoked paprika
 * 		6 parts granulated sugar
 * 		2 parts garlic powder
@@ -191,7 +191,7 @@ st.text_area("""
 """)
 
 st.subheader("Smoky Cinnamon Paprika Spice Blend")
-st.text_area("""
+st.write("""
 * 		1 part ground cloves
 * 		8 parts onion powder
 * 		8 parts ground cinnamon
@@ -202,7 +202,7 @@ st.text_area("""
 """)
 
 st.subheader("Steak Spice Blend")
-st.text_area("""
+st.write("""
 * 		1 part red chili flakes
 * 		1 part crushed coriander seed
 * 		2 parts crushed dill seed
@@ -213,7 +213,7 @@ st.text_area("""
 """)
 
 st.subheader("Sweet Smoky BBQ Spice Blend")
-st.text_area("""
+st.write("""
 * 		8 parts smoked paprika
 * 		6 parts sugar
 * 		2 parts garlic powder
@@ -224,7 +224,7 @@ st.text_area("""
 """)
 
 st.subheader("Thai Seven Spice Blend")
-st.text_area("""
+st.write("""
 * 		2.5 tsp white sesame seeds
 * 		1 tsp chili flakes
 * 		1 tsp ground coriander
@@ -236,7 +236,7 @@ st.text_area("""
 """)
 
 st.subheader("Tunisian Spice Blend")
-st.text_area("""
+st.write("""
 * 		4 parts ground caraway seed
 * 		4 parts ground coriander
 * 		4 parts smoked paprika
@@ -249,7 +249,7 @@ st.text_area("""
 """)
 
 st.subheader("Turkish Spice Blend")
-st.text_area("""
+st.write("""
 * 		2 part cumin
 * 		2 part garlic powder
 * 		1 part ground coriander
@@ -258,7 +258,7 @@ st.text_area("""
 """)
 
 st.subheader("Tuscan Heat Spice Blend")
-st.text_area("""
+st.write("""
 * 		4 parts dried basil
 * 		2 parts dried rosemary
 * 		2 parts dried oregano
