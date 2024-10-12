@@ -31,14 +31,14 @@ with st.sidebar:
         st.divider()
         meals_count = st.slider('How Many Meals?', 1, 5, 5)
 
-app_operational = True
+app_lock = False
 # Import Meal Directory and Ingredient Directory
 try:
   df_meal_directory_pre_allergy = pd.read_csv("meal_directory.csv")
   df_ingredient_directory = pd.read_csv("ingredient_directory.csv")
 except:
   st.write("Update in Progress")
-  app_operational = False
+  app_lock = True
   df_meal_directory_pre_allergy = pd.DataFrame()
   df_ingredient_directory = pd.DataFrame()
   
@@ -61,7 +61,7 @@ df_meal_directory = df_meal_directory_buffer
 #st.write(df_meal_directory)
 
 # Generate Meals
-if st.button('Inspire Me') and app_operational:
+if st.button('Inspire Me', disabled=app_lock):
 
   df_menu = pd.DataFrame()
   
