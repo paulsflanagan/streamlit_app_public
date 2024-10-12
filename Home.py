@@ -26,7 +26,8 @@ with st.sidebar:
         st.text("User: " + str(st.experimental_user['email']))
         st.divider()
         st.title('Allergies:')
-        allergy_nuts = st.checkbox("Misc nuts")
+        allergy_nuts = st.checkbox("Nuts")
+        allergy_fish = st.checkbox("Seafood")
         st.divider()
         meals_count = st.slider('How Many Meals?', 1, 5, 5)
 
@@ -38,11 +39,17 @@ df_ingredient_directory = pd.read_csv("ingredient_directory.csv")
 
 
 #Allergy Filter
-df_meal_directory = df_meal_directory_pre_allergy
+df_meal_directory_buffer = df_meal_directory_pre_allergy
 
 if allergy_nuts:
-  df_meal_directory = df_meal_directory_pre_allergy[df_meal_directory_pre_allergy['ingredients'].str.contains('nut') == False]
+  df_meal_directory_buffer = df_meal_directory_buffer[df_meal_directory_buffer['allergy'].str.contains('nut') == False]
+if allergy_fish:
+  df_meal_directory_buffer = df_meal_directory_buffer[df_meal_directory_buffer['allergy'].str.contains('fish') == False]
+  df_meal_directory_buffer = df_meal_directory_buffer[df_meal_directory_buffer['allergy'].str.contains('prawn') == False]
 
+
+
+df_meal_directory = df_meal_directory_buffer
 
 # Generate Meals
 if st.button('Inspire Me'):
