@@ -44,6 +44,7 @@ df_meal_directory_buffer = df_meal_directory_pre_allergy
 if allergy_nuts:
   df_meal_directory_buffer = df_meal_directory_buffer[df_meal_directory_buffer['allergy'].str.contains('nut') == False]
 if allergy_fish:
+  meals_count = 3
   df_meal_directory_buffer = df_meal_directory_buffer[df_meal_directory_buffer['allergy'].str.contains('fish') == False]
   df_meal_directory_buffer = df_meal_directory_buffer[df_meal_directory_buffer['allergy'].str.contains('prawn') == False]
 
