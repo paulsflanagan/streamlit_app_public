@@ -1,9 +1,7 @@
 import streamlit as st
 
-st.text_area(
-"""
-  
-All American Spice Blend
+st.subheader("All American Spice Blend")
+st.write("""
 * 		1 tbsp ground cumin
 * 		1 tbsp cayenne
 * 		1 tbsp onion powder
@@ -17,7 +15,7 @@ All American Spice Blend
 * 		1/2 tsp red pepper flakes
 * 		1/4 tsp ground allspice
 * 		1/8 tsp ground cloves
-
+""")
 
 Berbere Spice Blend
 * 		3 part paprika
