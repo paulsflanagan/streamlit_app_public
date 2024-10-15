@@ -136,6 +136,16 @@ st.write("""
 * 		1 part parsley
 """)
 
+st.subheader("Kasaba Spice Blend")
+st.write("""
+* 		1 part saffron (alternative: 1/2 part paprika and 1/2 part turmeric)
+* 		1 part ground cinnamon
+* 		1 part allspice
+* 		1 part dried whole lime powder
+* 		1 part ground cardamom
+* 		1 part ground white pepper
+""")
+
 st.subheader("Meatloaf Seasoning")
 st.write("""
 * 		2 parts onion powder
