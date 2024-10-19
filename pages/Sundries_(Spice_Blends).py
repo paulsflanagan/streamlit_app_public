@@ -136,6 +136,19 @@ st.write("""
 * 		1 part parsley
 """)
 
+st.subheader("Indonesian Spice Mix")
+st.write("""
+* 		2 parts coriander
+* 		1 part cumin
+* 		1 part fennel seeds
+* 		1/2 part cayenne pepper
+* 		1/2 part turmeric powder
+* 		1/2 part  cinnamon
+* 		1/2 part cardamom
+* 		1/2 part black pepper
+* 		cloves (optional)
+""")
+
 st.subheader("Kasaba Spice Blend")
 st.write("""
 * 		1 part saffron (alternative: 1/2 part paprika and 1/2 part turmeric)
