@@ -25,3 +25,15 @@ st.write("""
 * 		gochijang - (korean chilli pepper sauce)
 
 """)
+
+st.subheader("Ketjap Manis - (substitution)")
+st.write("""
+* 		3 parts honey
+* 		1 parts soy sauce
+                or
+* 		2 parts honey
+* 		1 parts oyster sauce
+                or
+* 		brown or palm sugar
+* 		soy sauce
+""")
