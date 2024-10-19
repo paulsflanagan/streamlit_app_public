@@ -16,19 +16,19 @@ with st.sidebar:
 
 st.subheader("All American Spice Blend")
 st.write("""
-* 		1 tbsp ground cumin
-* 		1 tbsp cayenne
-* 		1 tbsp onion powder
-* 		1 tbsp smoked paprika
-* 		2 tsp garlic powder
-* 		1 tsp ground coriander
-* 		1 tsp salt
-* 		1 tsp dried parsley
-* 		1/2 tsp black pepper
-* 		1/2 tsp dried mustard
-* 		1/2 tsp red pepper flakes
-* 		1/4 tsp ground allspice
-* 		1/8 tsp ground cloves
+* 		1 part ground cumin
+* 		1 part cayenne
+* 		1 part onion powder
+* 		1 part smoked paprika
+* 		2 part garlic powder
+* 		1 part ground coriander
+* 		1 part salt
+* 		1 part dried parsley
+* 		1/2 part black pepper
+* 		1/2 part dried mustard
+* 		1/2 part red pepper flakes
+* 		1/4 part ground allspice
+* 		1/8 part ground cloves
 """)
 
 st.subheader("Berbere Spice Blend")
@@ -43,62 +43,62 @@ st.write("""
 
 st.subheader("Bold and Savory Steak Spice Blend")
 st.write("""
+* 		4 parts garlic powder
+* 		4 parts ground black pepper
+* 		3 parts crushed mustard seed
+* 		2 parts crushed dill seed
 * 		1 part red chili flake
 * 		1 part crushed coriander seed
-* 		2 parts crushed dill seed
-* 		3 parts crushed mustard seed
-* 		4 parts dried minced garlic
-* 		4 parts crushed black pepper
 """)
 
 st.subheader("Blackening Spice Blend")
 st.write("""
-* 		3 tsp smoked paprika
-* 		1.5 tsp garlic powder
-* 		.5 tsp white pepper
-* 		.5 tsp black pepper
-* 		.25 tsp thyme
-* 		.25 tsp oregano
-* 		.125 tsp low heat cayenne
+* 		3 parts smoked paprika
+* 		2 parts garlic powder
+* 		1/2 part white pepper
+* 		1/2 part black pepper
+* 		1/4 part thyme
+* 		1/4 part oregano
+* 		1/4 part low heat cayenne
 """)
 
 
 st.subheader("Burger Spice Blend")
 st.write("""
-* 		1 Tbsp paprika
-* 		1 1/4 tsp salt
-* 		1 tsp ground black pepper
-* 		1/2 tsp garlic powder
-* 		1/2 tsp brown sugar
-* 		1/2 tsp onion powder
-* 		1/4 tsp cayenne
+* 		2 parts paprika
+* 		1 part salt
+* 		1 part ground black pepper
+* 		1/2 part garlic powder
+* 		1/2 part brown sugar
+* 		1/2 part onion powder
+* 		1/4 part cayenne
 """)
 
 st.subheader("Cajun Spice Blend")
 st.write("""
-* 		2 part paprika
-* 		2 part onion powder
+* 		2 parts paprika
+* 		2 parts onion powder
 * 		1 part garlic powder
 * 		1 part dried oregano
 * 		1 part dried thyme
-* 		.5 part dried basil
-* 		.5 part cayenne
+* 		1/2 part dried basil
+* 		1/2 part cayenne
 """)
 
 st.subheader("Enchilada Spice Blend")
 st.write("""
-* 		1 tbsp. chili powder
-* 		1 tbsp. paprika
-* 		2 tsp. cumin
-* 		2 tsp. light brown sugar
-* 		2 tsp. kosher salt
-* 		1.5 tsp. onion powder
-* 		1.5 tsp. garlic powder
-* 		1.5 tsp. Mexican oregano
-* 		1 tsp. chipotle chili powder
-* 		1 tsp. ground coriander
-* 		1 tsp. black pepper
-* 		1/4 to .5 tsp. cayenne pepper
+* 		2 parts chili powder
+* 		2 parts paprika
+* 		2 parts cumin
+* 		2 parts light brown sugar
+* 		2 parts kosher salt
+* 		1.5 parts onion powder
+* 		1.5 parts garlic powder
+* 		1.5 parts Mexican oregano
+* 		1 part chipotle chili powder
+* 		1 part ground coriander
+* 		1 part black pepper
+* 		1/2 part cayenne pepper
 """)
 
 st.subheader("Fall Spice Blend")
@@ -146,7 +146,7 @@ st.write("""
 * 		1/2 part  cinnamon
 * 		1/2 part cardamom
 * 		1/2 part black pepper
-* 		cloves (optional)
+* 		1/2 part ground cloves (optional)
 """)
 
 st.subheader("Kasaba Spice Blend")
@@ -205,8 +205,8 @@ st.write("""
 * 		1 part dried coriander
 * 		1 part garlic powder
 * 		1 part paprika
-* 		.5 part ground allspice
-* 		.5 part black pepper
+* 		1/2 part ground allspice
+* 		1/2 part black pepper
 """)
 
 st.subheader("Southwest Spice Blend")
@@ -224,29 +224,29 @@ st.write("""
 * 		1 part dry mustard
 * 		1 part ground cumin
 * 		1 part ground ginger
-* 		.5 part black pepper
+* 		1/2 part black pepper
 """)
 
 st.subheader("Smoky Cinnamon Paprika Spice Blend")
 st.write("""
-* 		1 part ground cloves
-* 		8 parts onion powder
-* 		8 parts ground cinnamon
-* 		6 parts smoked paprika
-* 		16 parts mustard powder
-* 		24 parts sweet paprika
-* 		24 parts sugar
+* 		6 parts sweet paprika
+* 		6 parts sugar
+* 		4 parts mustard powder
+* 		2 parts onion powder
+* 		2 parts ground cinnamon
+* 		1 parts smoked paprika
+* 		1/4 part ground cloves
 """)
 
 st.subheader("Steak Spice Blend")
 st.write("""
-* 		1 part red chili flakes
-* 		1 part crushed coriander seed
-* 		2 parts crushed dill seed
-* 		3 parts crushed mustard seed
 * 		4 parts dried minced garlic
 * 		4 parts crushed black pepper
 * 		3 parts kosher salt
+* 		3 parts crushed mustard seed
+* 		2 parts crushed dill seed
+* 		1 part red chili flakes
+* 		1 part crushed coriander seed
 """)
 
 st.subheader("Sweet Smoky BBQ Spice Blend")
@@ -254,22 +254,22 @@ st.write("""
 * 		8 parts smoked paprika
 * 		6 parts sugar
 * 		2 parts garlic powder
-* 		.5 part black pepper
 * 		1 part dry mustard
 * 		1 part cumin
 * 		1 part ground ginger
+* 		1/2 part black pepper
 """)
 
 st.subheader("Thai Seven Spice Blend")
 st.write("""
-* 		2.5 tsp white sesame seeds
-* 		1 tsp chili flakes
-* 		1 tsp ground coriander
-* 		1 tsp onion powder
-* 		.5 tsp garlic powder
-* 		.5 tsp shrimp extract powder
-* 		.25 tsp cinnamon
-* 		.125 tsp low heat cayenne
+* 		2.5 parts white sesame seeds
+* 		1 part chili flakes
+* 		1 part ground coriander
+* 		1 part onion powder
+* 		1/2 part garlic powder
+* 		1/2 part shrimp extract powder
+* 		1/2 part cinnamon
+* 		1/3 part low heat cayenne
 """)
 
 st.subheader("Tunisian Spice Blend")
@@ -302,4 +302,14 @@ st.write("""
 * 		2 parts garlic powder
 * 		1 part cayenne pepper [7.5 k (hu)]
 * 		1 part ground fennel
+""")
+
+st.subheader("Za’atar Spice Blend")
+st.write("""
+* 		2 part dried oregano
+* 		2 parts sumac
+* 		2 parts sesame seeds
+* 		1 part dried marjoram (or additional oregano)
+* 		1 part dried thyme
+* 		1/2 part fine sea salt
 """)
