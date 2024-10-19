@@ -16,11 +16,11 @@ with st.sidebar:
 
 st.subheader("All American Spice Blend")
 st.write("""
+* 		2 part garlic powder
 * 		1 part ground cumin
 * 		1 part cayenne
 * 		1 part onion powder
 * 		1 part smoked paprika
-* 		2 part garlic powder
 * 		1 part ground coriander
 * 		1 part salt
 * 		1 part dried parsley
