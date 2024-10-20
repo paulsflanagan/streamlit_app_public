@@ -13,7 +13,7 @@ with st.sidebar:
         st.text("User: " + str(st.experimental_user['email']))
         st.divider()
 
-
+st.subheader("")
 st.subheader("All American Spice Blend")
 st.write("""
 * 		2 part garlic powder
@@ -31,6 +31,7 @@ st.write("""
 * 		1/8 part ground cloves
 """)
 
+st.subheader("")
 st.subheader("Berbere Spice Blend")
 st.write("""
 * 		3 part paprika
@@ -41,6 +42,7 @@ st.write("""
 * 		.125 part ground fenugreek
 """)
 
+st.subheader("")
 st.subheader("Bold and Savory Steak Spice Blend")
 st.write("""
 * 		4 parts garlic powder
@@ -51,6 +53,7 @@ st.write("""
 * 		1 part crushed coriander seed
 """)
 
+st.subheader("")
 st.subheader("Blackening Spice Blend")
 st.write("""
 * 		3 parts smoked paprika
@@ -62,7 +65,7 @@ st.write("""
 * 		1/4 part low heat cayenne
 """)
 
-
+st.subheader("")
 st.subheader("Burger Spice Blend")
 st.write("""
 * 		2 parts paprika
@@ -74,6 +77,7 @@ st.write("""
 * 		1/4 part cayenne
 """)
 
+st.subheader("")
 st.subheader("Cajun Spice Blend")
 st.write("""
 * 		2 parts paprika
@@ -85,6 +89,7 @@ st.write("""
 * 		1/2 part cayenne
 """)
 
+st.subheader("")
 st.subheader("Enchilada Spice Blend")
 st.write("""
 * 		2 parts chili powder
@@ -101,6 +106,7 @@ st.write("""
 * 		1/2 part cayenne pepper
 """)
 
+st.subheader("")
 st.subheader("Fall Spice Blend")
 st.write("""
 * 		3 parts dried thyme
@@ -109,6 +115,7 @@ st.write("""
 * 		1 part onion powder
 """)
 
+st.subheader("")
 st.subheader("Fry Seasoning")
 st.write("""
 * 		1 part garlic powder
@@ -116,7 +123,7 @@ st.write("""
 * 		1 part paprika
 """)
 
-
+st.subheader("")
 st.subheader("Herbes de Provence Blend")
 st.write("""
 * 		1 part savory
@@ -127,6 +134,7 @@ st.write("""
 * 		1 part lavender flowers
 """)
 
+st.subheader("")
 st.subheader("Italian Seasoning Blend")
 st.write("""
 * 		1 part garlic powder
@@ -136,6 +144,7 @@ st.write("""
 * 		1 part parsley
 """)
 
+st.subheader("")
 st.subheader("Indonesian Spice Mix")
 st.write("""
 * 		2 parts coriander
@@ -149,6 +158,7 @@ st.write("""
 * 		1/2 part ground cloves (optional)
 """)
 
+st.subheader("")
 st.subheader("Kasaba Spice Blend")
 st.write("""
 * 		1 part saffron (alternative: 1/2 part paprika and 1/2 part turmeric)
@@ -159,12 +169,14 @@ st.write("""
 * 		1 part ground white pepper
 """)
 
+st.subheader("")
 st.subheader("Meatloaf Seasoning")
 st.write("""
 * 		2 parts onion powder
 * 		2 parts garlic powder
 """)
 
+st.subheader("")
 st.subheader("Mediterranean Spice Blend")
 st.write("""
 * 		2 parts dried oregano
@@ -173,6 +185,7 @@ st.write("""
 * 		1 part ground coriander
 """)
 
+st.subheader("")
 st.subheader("Mexican Spice Blend")
 st.write("""
 * 		2 parts chili powder
@@ -181,12 +194,14 @@ st.write("""
 * 		1 part cumin.
 """)
 
+st.subheader("")
 st.subheader("Moo Shu Spice Blend")
 st.write("""
 * 		1 part ground ginger
 * 		1 part garlic powder
 """)
 
+st.subheader("")
 st.subheader("Ranch Spice Blend")
 st.write("""
 * 		2 part dried parsley
@@ -198,6 +213,7 @@ st.write("""
 * 		1 dried chives
 """)
 
+st.subheader("")
 st.subheader("Shawarma Spice Blend")
 st.write("""
 * 		2 part tumeric
@@ -209,6 +225,7 @@ st.write("""
 * 		1/2 part black pepper
 """)
 
+st.subheader("")
 st.subheader("Southwest Spice Blend")
 st.write("""
 * 		4 part garlic powder
@@ -216,6 +233,7 @@ st.write("""
 * 		2 part chili powder
 """)
 
+st.subheader("")
 st.subheader("Smoky BBQ Seasoning")
 st.write("""
 * 		8 parts smoked paprika
@@ -227,6 +245,7 @@ st.write("""
 * 		1/2 part black pepper
 """)
 
+st.subheader("")
 st.subheader("Smoky Cinnamon Paprika Spice Blend")
 st.write("""
 * 		6 parts sweet paprika
@@ -238,6 +257,7 @@ st.write("""
 * 		1/4 part ground cloves
 """)
 
+st.subheader("")
 st.subheader("Steak Spice Blend")
 st.write("""
 * 		4 parts dried minced garlic
@@ -249,6 +269,7 @@ st.write("""
 * 		1 part crushed coriander seed
 """)
 
+st.subheader("")
 st.subheader("Sweet Smoky BBQ Spice Blend")
 st.write("""
 * 		8 parts smoked paprika
@@ -260,6 +281,7 @@ st.write("""
 * 		1/2 part black pepper
 """)
 
+st.subheader("")
 st.subheader("Thai Seven Spice Blend")
 st.write("""
 * 		2.5 parts white sesame seeds
@@ -272,6 +294,7 @@ st.write("""
 * 		1/3 part low heat cayenne
 """)
 
+st.subheader("")
 st.subheader("Tunisian Spice Blend")
 st.write("""
 * 		4 parts ground caraway seed
@@ -285,6 +308,7 @@ st.write("""
 * 		1 part ground black pepper
 """)
 
+st.subheader("")
 st.subheader("Turkish Spice Blend")
 st.write("""
 * 		2 part cumin
@@ -294,6 +318,7 @@ st.write("""
 * 		.25 part chili flakes
 """)
 
+st.subheader("")
 st.subheader("Tuscan Heat Spice Blend")
 st.write("""
 * 		4 parts dried basil
@@ -304,6 +329,7 @@ st.write("""
 * 		1 part ground fennel
 """)
 
+st.subheader("")
 st.subheader("Za’atar Spice Blend")
 st.write("""
 * 		2 part dried oregano
