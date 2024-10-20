@@ -12,8 +12,9 @@ with st.sidebar:
         st.title('Settings:')
         st.text("User: " + str(st.experimental_user['email']))
         st.divider()
-
-
+        
+st.subheader("")
+st.subheader("Sauces")
 st.subheader("Bulgogi Sauce")
 st.write("""
 * 		brown sugar
@@ -36,4 +37,21 @@ st.write("""
                 or
 * 		brown or palm sugar
 * 		soy sauce
+""")
+st.subheader("")
+st.subheader("Dips")
+st.subheader("")
+st.subheader("Tabbouleh")
+st.write("""
+* 		1 cup diced cucumber (salted and drained)
+* 		1 cup diced tomato (salted and drained)
+* 		3 medium bunches curly parsley
+* 		½ cup bulgur (cooked)
+* 		⅓ cup chopped fresh mint (optional)
+* 		⅓ cup thinly sliced green onion
+* 		⅓ cup extra-virgin olive oil
+* 		3 to 4 tablespoons lemon juice, to taste)
+* 		1 teaspoon fine salt
+* 		1 medium clove garlic (pressed or minced)
+
 """)
