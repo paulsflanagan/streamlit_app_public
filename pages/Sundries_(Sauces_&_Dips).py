@@ -14,7 +14,8 @@ with st.sidebar:
         st.divider()
         
 st.subheader("")
-st.subheader("Sauces")
+st.header("Sauces")
+st.subheader("")
 st.subheader("Bulgogi Sauce")
 st.write("""
 * 		brown sugar
@@ -39,7 +40,7 @@ st.write("""
 * 		soy sauce
 """)
 st.subheader("")
-st.subheader("Dips")
+st.header("Dips")
 st.subheader("")
 st.subheader("Tabbouleh")
 st.write("""
