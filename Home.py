@@ -11,7 +11,7 @@ import zipfile
 spb_url = st.secrets["spb_url"]
 spb_key = st.secrets["spb_key"]
 supabase: Client = create_client(spb_url, spb_key)
-userName = st.experimental_user.email
+userName = "Unknown" #st.experimental_user.email
 
 st.title('Gourmet Guru')
 #col1, col2 = st.columns([1, 3])
