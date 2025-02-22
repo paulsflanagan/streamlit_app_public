@@ -23,7 +23,7 @@ st.title('Gourmet Guru')
 
 with st.sidebar:
         st.title('Settings:')
-        st.text("User: " + str(st.experimental_user['email']))
+        #st.text("User: " + str(st.experimental_user['email']))
         st.divider()
         st.title('Allergies:')
         allergy_nuts = st.checkbox("Nuts")
